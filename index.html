@@ -49,7 +49,7 @@ p.bodytext{
             <div class="col-sm-12 col-lg-8">
                 <p class="bodytext">Web Accessibility Project provides a quick reference for those who are new to designing for web accessibility. It is important that the web is designed and developed to provide equal access to people with disabilities. Specifically, people with disabilities that affect their vision, hearing, and movement.</p>
                 <p class="bodytext">There's a misconception that design must be sacrificed in order to have an accessible website. Many sites are developed without thinking of accessibility as part of the process, making them difficult or impossible to use. The same principles that make a website accessible, however, are not not just for people with disabilities. Legible typography, clutter-free layouts, and organized content are just some of the ways to make a good website experience that benefits all users.</p>
-                <p class="bodytext">This web project is a break down of the Web Content Accessibility Guidelines, (WCAG) that designers and developers must follow in order to have a compliant and accessible site. It covers the most basic, but important, aspects of accessibility design.  This page is not an in-depth checklist of accessibility standards, but an introduction to those who are new to accessibility design for the web. </p>
+                <p class="bodytext">This web project is a break down of the Web Content Accessibility Guidelines, (WCAG) that designers and developers must follow in order to have a compliant and accessible site. It covers the most basic, but important, aspects of accessibility design. <strong>This page is not an in-depth checklist of accessibility standards, but an introduction to those who are new to accessibility design for the web. </strong></p>
                 <p class="bodytext">The task of creating a website that is accessible to all may seem like a daunting task. Web Accessibility Project hopes to provide the starting point for your web accessibility education. It’s important to develop an ongoing practice of reviewing and testing your site to identify accessibility issues.</p>
                 <p class="bodytext">Accessibility is essential for designers that want to create visually-appealing websites, but also provide equal access to everyone.</p>
             </div>
@@ -71,7 +71,7 @@ p.bodytext{
                 <img src ="type-h1.svg" role="img" width="150" height="150" alt="Heading 1">
                 </div>
                 <h3> <a href="#semantics" class="text-info" style="text-decoration: none">Semantics and Structure </a></h3>
-                <p class="bodytext">Semantic markup uses HTML tags properly and in the correct DOM order to be programmatically determined.</p>
+                <p class="bodytext">HTML tags are used properly and in the correct DOM order to be programmatically determined.</p>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4 text-sm-left text-lg-center">
                 <div class="mx-auto p-3" style="width: 200px;">
@@ -99,7 +99,7 @@ p.bodytext{
                 <img src ="palette-fill.svg" role="img" width="150" height="150" alt="Paint palette">
                 </div>
                 <h3><a href="#color" class="text-info" style="text-decoration: none">Color and Contrast</a></h3>
-                <p class="bodytext">Elements have sufficient contrast and color is not the only visual means of conveying information.</p> 
+                <p class="bodytext">Elements have sufficient contrast, and color is not the only visual means of conveying information.</p> 
             </div>
               <div class="col-sm-12 col-md-6 col-lg-4 text-sm-left text-lg-center">
                 <div class="mx-auto p-3" style="width: 200px;">
@@ -142,7 +142,7 @@ p.bodytext{
                 <h3 class="display-6 text-info">Alternative Text</h3>
             </div>
             <div class="col-sm-12 col-lg-8">
-                <p class="bodytext">Non-text content, such as images, graphics and videos, are not visible for the blind or the visually impaired. All non-text content should provide a text alternative that represents the same information as the visual and multimedia content that can be interpreted by user agents and assistive technologies. </p>
+                <p class="bodytext">Non-text content, such as images, graphics and videos, are not visible for the blind or the visually impaired. All non-text content should provide a text alternative that represents the same information as the visual and multimedia content that can be interpreted by assistive technologies. </p>
 
                 <p class="bodytext">Images and graphics must have descriptive alternative text. This can be with the alt attribute value (alt=), title attribute value (title=), aria-label property, or aria-labelledby property. </p>
 
@@ -167,7 +167,7 @@ p.bodytext{
                 <h3 class="display-6 text-info">Keyboard Navigation</h3>
             </div>
             <div class="col-sm-12 col-lg-8">
-                <p class="bodytext">Many people use only the keyboard to navigate web pages. All functionality of the content should be available through a keyboard. </p>
+                <p class="bodytext">Many people use only the keyboard to navigate web pages. Therefore, all functionality of the content should be available through a keyboard. </p>
 
                 <p class="bodytext">Keyboard users typically navigate through a web page using the <strong>Tab key</strong>. Links, buttons, and interactive controls must be focusable for keyboard users to tab through. The keyboard focus should never be locked or trapped on a page element. </p>
 
@@ -186,18 +186,18 @@ p.bodytext{
                 <h3 class="display-6 text-info">Programmatic Labels</h3>
             </div>
             <div class="col-sm-12 col-lg-8">
-                <p class="bodytext">Every form input and control needs a label. An accessible name for screen readers and other assistive technologies to communicate the name, role, and value to the user.</p>
+                <p class="bodytext">Every form input and control needs a label for screen readers and other assistive technologies to communicate the name, role, and value to the user.</p>
 
                 <p class="bodytext"> There are multiple ways of providing labels. The best way is to use the HTML < label > element because it works and is already accessible. Another way is by using <strong>Accessible Rich Internet Applications (ARIA)</strong>, a set of roles and attributes that provide semantic meaning to the content. ARIA is best for more complex and dynamic interactions that can’t be communicated using simple HTML elements. </p>
 
                 <p class="bodytext">ARIA allows you to communicate the following to screen readers:</p>
 
                 <ul>
-                    <li><strong>labels</strong> or names for items (e.g. using aria-label or aria-labelledby)</li>
+                    <li><strong>labels</strong> or names for items (aria-label or aria-labelledby)</li>
                     <li><strong>roles</strong>, role="navigation", role="main", etc. </li>
-                    <li><strong>states</strong> of dynamic/interactive components (e.g. aria-selected="true", aria-expanded="true", aria-hidden="true")</li>
-                    <li><strong>properties</strong> of items (e.g. aria-haspopup="true")</li>
-                    <li><strong>relationships</strong> between items (e.g. aria-owns, aria-controls) </li>
+                    <li><strong>states</strong> of dynamic/interactive components ( aria-selected="true", aria-expanded="true", aria-hidden="true")</li>
+                    <li><strong>properties</strong> of items (aria-haspopup="true")</li>
+                    <li><strong>relationships</strong> between items (aria-owns, aria-controls) </li>
                     <li><strong>live announcements</strong> in real-time that are passed on to screen readers.</li>
                 </ul>
 
@@ -232,9 +232,9 @@ p.bodytext{
                 <h3 class="display-6 text-info">Testing</h3>
             </div>
             <div class="col-sm-12 col-lg-8">
-                <p class="bodytext">Testing for accessibility should be conducted in the early and main stages of the development process in order to catch accessibility issues before they reach production.</p>
+                <p class="bodytext">Testing for accessibility should be conducted in the early and main stages of the development process in order to catch accessibility issues before they reach production. </p>
 
-                <p class="bodytext">The best practice is to start by conducting <strong>automated tests</strong>. There are a number of software programs and tools that can be used to automatically scan pages on a website to identify accessibility problems. </p>
+                <p class="bodytext">The best practice is to start by conducting <strong>automated tests</strong>. There are a number of software programs and tools that can be used to automatically scan pages on a website to identify accessibility problems, such as <strong>axe DevTools extension</strong> and <strong>Firefox Web Developer Tools.</strong> </p>
                 
                 <p class="bodytext"> <strong>Manual testing</strong> then needs to be done in order to validate automated tests and discover issues that automated tests didn’t find. The main methodology for manual testing is the use of screen readers. </p>
                 
@@ -274,7 +274,7 @@ p.bodytext{
                 <h2 class="display-4">Further Information</h2>
             </div>
             <div class="col-sm-12 col-lg-6">
-                <p class="bodytext">Website accessibility is a legal matter in many countries, with accessibility non-compliance amounting to discrimination. <strong>Web Content Accessibility Guidelines (WCAG) 2</strong>, published by the World Wide Web Consortium (W3C), define the principles, guidelines, success criteria, and techniques needed for accessibility. </p>
+                <p class="bodytext">Website accessibility is a legal matter in many countries, with accessibility non-compliance amounting to discrimination. <strong>Web Content Accessibility Guidelines (WCAG)</strong>, published by the World Wide Web Consortium (W3C), define the principles, guidelines, success criteria, and techniques needed for accessibility. </p>
                 
                 <p class="bodytext">Review their detailed methodology to see how your website adheres to accessibility standards.
                 </p>
