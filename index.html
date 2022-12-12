@@ -14,7 +14,7 @@
 <!-- Navbar -->
 
 <style>
-p {
+p.bodytext{
   font-family: "Source Serif 4";
   font-size: 16px;
 }
@@ -47,9 +47,11 @@ p {
                 <h2 class="display-4">Accessibility Benefits Everyone</h2>
             </div>
             <div class="col-sm-12 col-lg-8">
-                <p>Web Accessibility Project provides a quick reference for those who are new to designing for web accessibility.</p>
-                <p>There's a misconception that design must be sacrificed in order to have an accessible website. Many sites are developed without thinking of accessibility as part of the process, making them difficult or impossible for people with disabilities to use.  But the same principles that make a website accessible can also benefit all users and businesses.</p>
-                <p>Accessibility is essential for designers that want to create visually-appealing websites, but also provide equal access to everyone.</p>
+                <p class="bodytext">Web Accessibility Project provides a quick reference for those who are new to designing for web accessibility. It is important that the web is designed and developed to provide equal access to people with disabilities. Specifically, people with disabilities that affect their vision, hearing, and movement.</p>
+                <p class="bodytext">There's a misconception that design must be sacrificed in order to have an accessible website. Many sites are developed without thinking of accessibility as part of the process, making them difficult or impossible to use. The same principles that make a website accessible, however, are not not just for people with disabilities. Legible typography, clutter-free layouts, and organized content are just some of the ways to make a good website experience that benefits all users.</p>
+                <p class="bodytext">This web project is a break down of the Web Content Accessibility Guidelines, (WCAG) that designers and developers must follow in order to have a compliant and accessible site. It covers the most basic, but important, aspects of accessibility design.  This page is not an in-depth checklist of accessibility standards, but an introduction to those who are new to accessibility design for the web. </p>
+                <p class="bodytext">The task of creating a website that is accessible to all may seem like a daunting task. Web Accessibility Project hopes to provide the starting point for your web accessibility education. It’s important to develop an ongoing practice of reviewing and testing your site to identify accessibility issues.</p>
+                <p class="bodytext">Accessibility is essential for designers that want to create visually-appealing websites, but also provide equal access to everyone.</p>
             </div>
         </div>
     </div>
@@ -69,42 +71,42 @@ p {
                 <img src ="type-h1.svg" role="img" width="150" height="150" alt="Heading 1">
                 </div>
                 <h3> <a href="#semantics" class="text-info" style="text-decoration: none">Semantics and Structure </a></h3>
-                <p>Semantic markup uses HTML tags properly and in the correct DOM order to be programmatically determined.</p>
+                <p class="bodytext">Semantic markup uses HTML tags properly and in the correct DOM order to be programmatically determined.</p>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4 text-sm-left text-lg-center">
                 <div class="mx-auto p-3" style="width: 200px;">
                 <img src ="chat-left-text-fill.svg" role="img" width="150" height="150" alt="Speech bubble">
                 </div>
                 <h3><a href="#alttext" class="text-info" style="text-decoration: none">Alternative Text</a></h3>
-                <p>Non-text content has a text alternative. This includes captions and transcripts for multimedia content.</p>
+                <p class="bodytext">Non-text content has a text alternative. This includes captions and transcripts for multimedia content.</p>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4 text-sm-left text-lg-center">
                 <div class="mx-auto p-3" style="width: 200px;">
                 <img src ="keyboard-fill.svg" role="img" width="150" height="150" alt="Keyboard">
                 </div>
                 <h3><a href="#keyboard" class="text-info" style="text-decoration: none">Keyboard Navigation</a></h3>
-                <p>The functionality of content is available using only the keyboard and focusable elements have tab focus.</p>
+                <p class="bodytext">The functionality of content is available using only the keyboard and focusable elements have tab focus.</p>
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4 text-sm-left text-lg-center">
                 <div class="mx-auto p-3" style="width: 200px;">
                 <img src ="universal-access.svg" role="img" width="150" height="150" alt="Accessibility icon">
                 </div>
                 <h3><a href="#labels" class="text-info" style="text-decoration: none">Programmatic Labels</a></h3>
-                <p>Custom controls have the correct name/label, role, and value (either with HTML or with ARIA). </p> 
+                <p class="bodytext">Custom controls have the correct name/label, role, and value (either with HTML or with ARIA). </p> 
             </div>
             <div class="col-sm-12 col-md-6 col-lg-4 text-sm-left text-lg-center">
                 <div class="mx-auto p-3" style="width: 200px;">
                 <img src ="palette-fill.svg" role="img" width="150" height="150" alt="Paint palette">
                 </div>
                 <h3><a href="#color" class="text-info" style="text-decoration: none">Color and Contrast</a></h3>
-                <p>Elements have sufficient contrast and color is not the only visual means of conveying information.</p> 
+                <p class="bodytext">Elements have sufficient contrast and color is not the only visual means of conveying information.</p> 
             </div>
               <div class="col-sm-12 col-md-6 col-lg-4 text-sm-left text-lg-center">
                 <div class="mx-auto p-3" style="width: 200px;">
                 <img src ="badge-vo-fill.svg" role="img" width="150" height="150" alt="VoiceOver badge">
                 </div>
                 <h3><a href="#testing" class="text-info" style="text-decoration: none">Testing</a></h3>
-                <p>Using automated tools and assistive technology, like screen readers, to check for accessibility.</p> 
+                <p class="bodytext">Using automated tools and assistive technology, like screen readers, to check for accessibility.</p> 
             </div>
         </div>
 </section>
@@ -121,11 +123,11 @@ p {
                 <h3 class="display-6 text-info">Semantics and Structure</h3>
             </div>
             <div class="col-sm-12 col-lg-8">
-                <p>Semantics, or semantic markup, refers to the use of HTML tags to convey the meaning of the content contained within them. Semantic elements use words to represent what that element contains, such as information, structure, and relationships.</p>
+                <p class="bodytext">Semantics, or semantic markup, refers to the use of HTML tags to convey the meaning of the content contained within them. Semantic elements use words to represent what that element contains, such as information, structure, and relationships.</p>
 
-                <p>For example, headings are one of the most important semantic elements of any web page. They represent the titles and subtitles of a page. They provide a clear structure of a document, which allows all users to easily scan through the page content.  There are six levels of headings: <strong> < h1 >,< h2 >, < h3 >, < h4 >, < h5 >, and < h6 > </strong>.  The beginning of the main content should always start with <strong>< h1 ></strong> and there should only be one <strong>< h1 ></strong> element. Headings should not skip hierarchical levels. Text that does not act as a heading visually or structurally should not be marked as a heading. </p>
+                <p class="bodytext">For example, headings are one of the most important semantic elements of any web page. They represent the titles and subtitles of a page. They provide a clear structure of a document, which allows all users to easily scan through the page content.  There are six levels of headings: <strong> < h1 >,< h2 >, < h3 >, < h4 >, < h5 >, and < h6 > </strong>.  The beginning of the main content should always start with <strong>< h1 ></strong> and there should only be one <strong>< h1 ></strong> element. Headings should not skip hierarchical levels. Text that does not act as a heading visually or structurally should not be marked as a heading. </p>
                 
-                <p>Semantic elements (landmarks, headings, lists, links, images, etc.) are typically read aloud by screen readers. When screen reader users navigate through the content, the order that they hear the content is determined by the order in the <strong>document object model (DOM)</strong>. It’s important then that the reading order of the semantic markup is logical and intuitive for screen reader users. </p>
+                <p class="bodytext">Semantic elements (landmarks, headings, lists, links, images, etc.) are typically read aloud by screen readers. When screen reader users navigate through the content, the order that they hear the content is determined by the order in the <strong>document object model (DOM)</strong>. It’s important then that the reading order of the semantic markup is logical and intuitive for screen reader users. </p>
 
                 <a href="https://www.w3.org/TR/WCAG21/#info-and-relationships" class="text-info">Learn more about Semantics and Structure</a>
             </div>
@@ -140,9 +142,9 @@ p {
                 <h3 class="display-6 text-info">Alternative Text</h3>
             </div>
             <div class="col-sm-12 col-lg-8">
-                <p>Non-text content, such as images, graphics and videos, are not visible for the blind or the visually impaired. All non-text content should provide a text alternative that represents the same information as the visual and multimedia content that can be interpreted by user agents and assistive technologies. </p>
+                <p class="bodytext">Non-text content, such as images, graphics and videos, are not visible for the blind or the visually impaired. All non-text content should provide a text alternative that represents the same information as the visual and multimedia content that can be interpreted by user agents and assistive technologies. </p>
 
-                <p>Images and graphics must have descriptive alternative text. This can be with the alt attribute value (alt=), title attribute value (title=), aria-label property, or aria-labelledby property. </p>
+                <p class="bodytext">Images and graphics must have descriptive alternative text. This can be with the alt attribute value (alt=), title attribute value (title=), aria-label property, or aria-labelledby property. </p>
 
                 <p><strong>Good Example:</strong><br>
                 < img src="cute-black-kitten.jpg" <strong>alt="A black kitten"</strong> > </p>
@@ -150,7 +152,7 @@ p {
                 <p><strong>Bad Example:</strong><br>
                 < img src="IMG_584321.jpg" > </p>
 
-                <p>Similarly, audio content is not perceivable to those who are deaf or hard of hearing. Webpages should also provide captions and transcripts for their multimedia content.  </p>
+                <p class="bodytext">Similarly, audio content is not perceivable to those who are deaf or hard of hearing. Webpages should also provide captions and transcripts for their multimedia content.  </p>
 
                 <a href="https://www.w3.org/TR/WCAG21/#text-alternatives" class="text-info">Learn more about Alternative Text</a>
             </div>
@@ -165,11 +167,11 @@ p {
                 <h3 class="display-6 text-info">Keyboard Navigation</h3>
             </div>
             <div class="col-sm-12 col-lg-8">
-                <p>Many people use only the keyboard to navigate web pages. All functionality of the content should be available through a keyboard. </p>
+                <p class="bodytext">Many people use only the keyboard to navigate web pages. All functionality of the content should be available through a keyboard. </p>
 
-                <p>Keyboard users typically navigate through a web page using the <strong>Tab key</strong>. Links, buttons, and interactive controls must be focusable for keyboard users to tab through. The keyboard focus should never be locked or trapped on a page element. </p>
+                <p class="bodytext">Keyboard users typically navigate through a web page using the <strong>Tab key</strong>. Links, buttons, and interactive controls must be focusable for keyboard users to tab through. The keyboard focus should never be locked or trapped on a page element. </p>
 
-                <p>The order of focusable items (buttons, links, form elements, custom controls, etc.) also needs to be logical and intuitive for keyboard users to easily navigate the content.</p>
+                <p class="bodytext">The order of focusable items (buttons, links, form elements, custom controls, etc.) also needs to be logical and intuitive for keyboard users to easily navigate the content.</p>
 
                 <a href="https://www.w3.org/TR/WCAG21/#keyboard-accessible" class="text-info">Learn more about Keyboard Navigation</a>
             </div>
@@ -184,11 +186,11 @@ p {
                 <h3 class="display-6 text-info">Programmatic Labels</h3>
             </div>
             <div class="col-sm-12 col-lg-8">
-                <p>Every form input and control needs a label. An accessible name for screen readers and other assistive technologies to communicate the name, role, and value to the user.</p>
+                <p class="bodytext">Every form input and control needs a label. An accessible name for screen readers and other assistive technologies to communicate the name, role, and value to the user.</p>
 
-                <p> There are multiple ways of providing labels. The best way is to use the HTML < label > element because it works and is already accessible. Another way is by using <strong>Accessible Rich Internet Applications (ARIA)</strong>, a set of roles and attributes that provide semantic meaning to the content. ARIA is best for more complex and dynamic interactions that can’t be communicated using simple HTML elements. </p>
+                <p class="bodytext"> There are multiple ways of providing labels. The best way is to use the HTML < label > element because it works and is already accessible. Another way is by using <strong>Accessible Rich Internet Applications (ARIA)</strong>, a set of roles and attributes that provide semantic meaning to the content. ARIA is best for more complex and dynamic interactions that can’t be communicated using simple HTML elements. </p>
 
-                <p>ARIA allows you to communicate the following to screen readers:</p>
+                <p class="bodytext">ARIA allows you to communicate the following to screen readers:</p>
 
                 <ul>
                     <li><strong>labels</strong> or names for items (e.g. using aria-label or aria-labelledby)</li>
@@ -213,9 +215,9 @@ p {
                 <h3 class="display-6 text-info">Color and Contrast</h3>
             </div>
             <div class="col-sm-12 col-lg-8">
-                <p>Color is great for enhancing the content and design of a webpage, but it should not be the only visual means of conveying information. There should be other visual indicators besides color so that the visual content is perceivable and understandable by people of differing abilities, including people who are color blind or have low vision. </p>
+                <p class="bodytext">Color is great for enhancing the content and design of a webpage, but it should not be the only visual means of conveying information. There should be other visual indicators besides color so that the visual content is perceivable and understandable by people of differing abilities, including people who are color blind or have low vision. </p>
 
-                <p> Color contrast is also important for those who need to magnify the screen, or who need high contrast colors. The color contrast between text and background should be <strong>at least 4.5:1</strong> for small text or <strong>3:1 </strong> for large text so the content is easier to read.</p>
+                <p class="bodytext"> Color contrast is also important for those who need to magnify the screen, or who need high contrast colors. The color contrast between text and background should be <strong>at least 4.5:1</strong> for small text or <strong>3:1 </strong> for large text so the content is easier to read.</p>
 
                 <a href="https://www.w3.org/TR/WCAG21/#use-of-color" class="text-info">Learn more about Color and Contrast</a><br>
             </div>
@@ -230,13 +232,13 @@ p {
                 <h3 class="display-6 text-info">Testing</h3>
             </div>
             <div class="col-sm-12 col-lg-8">
-                <p>Testing for accessibility should be conducted in the early and main stages of the development process in order to catch accessibility issues before they reach production.</p>
+                <p class="bodytext">Testing for accessibility should be conducted in the early and main stages of the development process in order to catch accessibility issues before they reach production.</p>
 
-                <p>The best practice is to start by conducting <strong>automated tests</strong>. There are a number of software programs and tools that can be used to automatically scan pages on a website to identify accessibility problems. </p>
+                <p class="bodytext">The best practice is to start by conducting <strong>automated tests</strong>. There are a number of software programs and tools that can be used to automatically scan pages on a website to identify accessibility problems. </p>
                 
-                <p> <strong>Manual testing</strong> then needs to be done in order to validate automated tests and discover issues that automated tests didn’t find. The main methodology for manual testing is the use of screen readers. </p>
+                <p class="bodytext"> <strong>Manual testing</strong> then needs to be done in order to validate automated tests and discover issues that automated tests didn’t find. The main methodology for manual testing is the use of screen readers. </p>
                 
-                <p> There are a number of screen readers to test with:</p>
+                <p class="bodytext"> There are a number of screen readers to test with:</p>
                 
                 <p><strong>Desktop screen readers:</strong></p>
                 <ul><li>JAWS with Chrome</li>
@@ -252,7 +254,7 @@ p {
                     <li> TalkBack with Chrome (Android)</li>
                 </ul>
                 
-                <p> After conducting both automated and manual testing, the findings and issues from the tests should be documented in an accessibility report to be shared with designers and developers.</p>
+                <p class="bodytext"> After conducting both automated and manual testing, the findings and issues from the tests should be documented in an accessibility report to be shared with designers and developers.</p>
 
                  <a href="https://www.w3.org/WAI/test-evaluate/" class="text-info">Learn more about Accessibility Testing</a><br>
             </div>
@@ -272,9 +274,9 @@ p {
                 <h2 class="display-4">Further Information</h2>
             </div>
             <div class="col-sm-12 col-lg-6">
-                <p>Website accessibility is a legal matter in many countries, with accessibility non-compliance amounting to discrimination. <strong>Web Content Accessibility Guidelines (WCAG) 2</strong>, published by the World Wide Web Consortium (W3C), define the principles, guidelines, success criteria, and techniques needed for accessibility. </p>
+                <p class="bodytext">Website accessibility is a legal matter in many countries, with accessibility non-compliance amounting to discrimination. <strong>Web Content Accessibility Guidelines (WCAG) 2</strong>, published by the World Wide Web Consortium (W3C), define the principles, guidelines, success criteria, and techniques needed for accessibility. </p>
                 
-                <p>Review their detailed methodology to see how your website adheres to accessibility standards.
+                <p class="bodytext">Review their detailed methodology to see how your website adheres to accessibility standards.
                 </p>
             </div>
             <div class="col-sm-12 col-lg-6">
