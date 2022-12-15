@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Accessibility Project</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Serif 4">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="main.js"></script>
@@ -12,13 +13,6 @@
 <body>
 
 <!-- Navbar -->
-
-<style>
-p.bodytext{
-  font-family: "Source Serif 4";
-  font-size: 16px;
-}
-</style>
 
 <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
@@ -125,8 +119,30 @@ p.bodytext{
             <div class="col-sm-12 col-lg-8">
                 <p class="bodytext">Semantics, or semantic markup, refers to the use of HTML tags to convey the meaning of the content contained within them. Semantic elements use words to represent what that element contains, such as information, structure, and relationships.</p>
 
-                <p class="bodytext">For example, headings are one of the most important semantic elements of any web page. They represent the titles and subtitles of a page. They provide a clear structure of a document, which allows all users to easily scan through the page content.  There are six levels of headings: <strong> < h1 >,< h2 >, < h3 >, < h4 >, < h5 >, and < h6 > </strong>.  The beginning of the main content should always start with <strong>< h1 ></strong> and there should only be one <strong>< h1 ></strong> element. Headings should not skip hierarchical levels. Text that does not act as a heading visually or structurally should not be marked as a heading. </p>
-                
+                <p class="bodytext">For example, headings are one of the most important semantic elements of any web page. They represent the titles and subtitles of a page. They provide a clear structure of a document, which allows all users to easily scan through the page content.  There are six levels of headings: <code> &lt;h1&gt;,&lt;h2&gt;,&lt;h3&gt;,&lt;h4&gt;,&lt;h5&gt;</code>, and <code>&lt;h6&gt;</code>.  The beginning of the main content should always start with <code>&lt;h1&gt;</code> and there should only be one <code>&lt;h1&gt;</code> element. Headings should not skip hierarchical levels. Text that does not act as a heading visually or structurally should not be marked as a heading. </p>
+
+                <p><strong>Good Example:</strong><br>
+                <code>&lt;h1&gt;Types of Animals&lt;/h1&gt;</strong></p></code>
+                <code><p style="margin-left: 30px">&lt;h2&gt;Dogs&lt;/h2&gt;</p></code>
+                <code><p style="margin-left: 60px">&lt;h3&gt;German Shepard&lt;/h3&gt;</p></code>
+                <code><p style="margin-left: 60px">&lt;h3&gt;Bulldog&lt;/h3&gt;</p></code>
+                <code><p style="margin-left: 60px">&lt;h3&gt;Golden Retriever&lt;/h3&gt;</p></code>
+                <code><p style="margin-left: 30px">&lt;h2&gt;Cats&lt;/h2&gt;</p></code>
+                <code><p style="margin-left: 60px">&lt;h3&gt;Maine Coon&lt;/h3&gt;</p></code>
+                <code><p style="margin-left: 60px">&lt;h3&gt;Siamese&lt;/h3&gt;</p></code>
+                <code><p style="margin-left: 60px">&lt;h3&gt;Ragdoll&lt;/h3&gt;</p></code>
+
+                <p><strong>Bad Example:</strong><br>
+                <code>&lt;h1&gt;Types of Animals&lt;/h1&gt;</strong></p></code>
+                <code><p style="margin-left: 30px">&lt;h2&gt;Dogs&lt;/h2&gt;</p></code>
+                <code><p style="margin-left: 60px">&lt;h4&gt;German Shepard&lt;/h4&gt;</p></code>
+                <code><p style="margin-left: 60px">&lt;h4&gt;Bulldog&lt;/h4&gt;</p></code>
+                <code><p style="margin-left: 60px">&lt;h4&gt;Golden Retriever&lt;/h4&gt;</p></code>
+                <code><p style="margin-left: 30px">&lt;h3&gt;Cats&lt;/h3&gt;</p></code>
+                <code><p style="margin-left: 60px">&lt;h6&gt;Maine Coon&lt;/h6&gt;</p></code>
+                <code><p style="margin-left: 60px">&lt;h6&gt;Siamese&lt;/h6&gt;</p></code>
+                <code><p style="margin-left: 60px">&lt;h6&gt;Ragdoll&lt;/h6&gt;</p></code>
+               
                 <p class="bodytext">Semantic elements (landmarks, headings, lists, links, images, etc.) are typically read aloud by screen readers. When screen reader users navigate through the content, the order that they hear the content is determined by the order in the <strong>document object model (DOM)</strong>. It’s important then that the reading order of the semantic markup is logical and intuitive for screen reader users. </p>
 
                 <a href="https://www.w3.org/TR/WCAG21/#info-and-relationships" class="text-info">Learn more about Semantics and Structure</a>
@@ -144,13 +160,13 @@ p.bodytext{
             <div class="col-sm-12 col-lg-8">
                 <p class="bodytext">Non-text content, such as images, graphics and videos, are not visible for the blind or the visually impaired. All non-text content should provide a text alternative that represents the same information as the visual and multimedia content that can be interpreted by assistive technologies. </p>
 
-                <p class="bodytext">Images and graphics must have descriptive alternative text. This can be with the alt attribute value (alt=), title attribute value (title=), aria-label property, or aria-labelledby property. </p>
+                <p class="bodytext">Images and graphics must have descriptive alternative text. This can be with the alt attribute value (<code>alt=</code>), title attribute value (<code>title=</code>), <code>aria-label</code> property, or <code>aria-labelledby</code> property.</p>
 
                 <p><strong>Good Example:</strong><br>
-                < img src="cute-black-kitten.jpg" <strong>alt="A black kitten"</strong> > </p>
+                <code>&lt;img src="cute-black-kitten.jpg" <strong>alt="A black kitten"&gt;</strong></p></code>
 
                 <p><strong>Bad Example:</strong><br>
-                < img src="IMG_584321.jpg" > </p>
+                <code>&lt;img src="IMG_584321.jpg"&gt;</p></code>
 
                 <p class="bodytext">Similarly, audio content is not perceivable to those who are deaf or hard of hearing. Webpages should also provide captions and transcripts for their multimedia content.  </p>
 
@@ -188,16 +204,23 @@ p.bodytext{
             <div class="col-sm-12 col-lg-8">
                 <p class="bodytext">Every form input and control needs a label for screen readers and other assistive technologies to communicate the name, role, and value to the user.</p>
 
-                <p class="bodytext"> There are multiple ways of providing labels. The best way is to use the HTML < label > element because it works and is already accessible. Another way is by using <strong>Accessible Rich Internet Applications (ARIA)</strong>, a set of roles and attributes that provide semantic meaning to the content. ARIA is best for more complex and dynamic interactions that can’t be communicated using simple HTML elements. </p>
+                <p class="bodytext"> There are multiple ways of providing labels. The best way is to use the HTML <code>&lt;label&gt;</code> element because it works and is already accessible. Another way is by using <strong>Accessible Rich Internet Applications (ARIA)</strong>, a set of roles and attributes that provide semantic meaning to the content. ARIA is best for more complex and dynamic interactions that can’t be communicated using simple HTML elements. </p>
+
+                <p><strong>Good Example:</strong><br>
+                <code>&lt;button <strong>aria-label=“menu”</strong> class=“hamburger”&gt;&lt;/button&gt;</p></code>
+
+                <p><strong>Bad Example:</strong><br>
+                <code>&lt;button class=“hamburger”&gt;&lt;/button&gt;</code></p>
+
 
                 <p class="bodytext">ARIA allows you to communicate the following to screen readers:</p>
 
                 <ul>
-                    <li><strong>labels</strong> or names for items (aria-label or aria-labelledby)</li>
-                    <li><strong>roles</strong>, role="navigation", role="main", etc. </li>
-                    <li><strong>states</strong> of dynamic/interactive components ( aria-selected="true", aria-expanded="true", aria-hidden="true")</li>
-                    <li><strong>properties</strong> of items (aria-haspopup="true")</li>
-                    <li><strong>relationships</strong> between items (aria-owns, aria-controls) </li>
+                    <li><strong>labels</strong> or names for items (<code>aria-label</code> or <code>aria-labelledby</code>)</li>
+                    <li><strong>roles</strong>, <code>role="navigation"</code>, <code>role="main"</code>, etc. </li>
+                    <li><strong>states</strong> of dynamic/interactive components (<code>aria-selected="true"</code>, <code>aria-expanded="true"</code>, <code>aria-hidden="true"</code>)</li>
+                    <li><strong>properties</strong> of items (<code>aria-haspopup="true"</code>)</li>
+                    <li><strong>relationships</strong> between items (<code>aria-owns, aria-controls</code>) </li>
                     <li><strong>live announcements</strong> in real-time that are passed on to screen readers.</li>
                 </ul>
 
@@ -218,6 +241,16 @@ p.bodytext{
                 <p class="bodytext">Color is great for enhancing the content and design of a webpage, but it should not be the only visual means of conveying information. There should be other visual indicators besides color so that the visual content is perceivable and understandable by people of differing abilities, including people who are color blind or have low vision. </p>
 
                 <p class="bodytext"> Color contrast is also important for those who need to magnify the screen, or who need high contrast colors. The color contrast between text and background should be <strong>at least 4.5:1</strong> for small text or <strong>3:1 </strong> for large text so the content is easier to read.</p>
+
+                <p><strong>Good Example:</strong><br>
+                <div class="colorblock1" alt="Black box with white text">Good Contrast</div>
+                <div class=colorblock2 alt="Light grey box with black text">Good Contrast</div>
+                <div class=colorblock3 alt="Light blue box with dark blue text">Good Contrast</div>
+
+                <p><strong>Bad Example:</strong><br>
+                <div class=colorblock4 alt="Green box with red text">Bad Contrast</div>
+                <div class=colorblock5 alt="Light grey box with white text">Bad Contrast</div>
+                <div class=colorblock6 alt="Red box with orange text">Bad Contrast</div>
 
                 <a href="https://www.w3.org/TR/WCAG21/#use-of-color" class="text-info">Learn more about Color and Contrast</a><br>
             </div>
